@@ -1,0 +1,73 @@
+.logo{
+    height: 1.7em; 
+}
+a img{
+    max-width: 100%;
+}
+.centro{
+    margin-right: 30vw;
+}
+.boton{
+    margin-right: 4%;
+}
+
+.login{
+    color: black;
+    border-radius: 10%;
+    border: solid #3c4444 1px;
+    background-color: #d8e2dc;
+}
+.login:hover{
+    color: black;
+    text-shadow: 0vh 0vh 1vh gold;
+    transition: all 0.5s ease;
+}
+#navbar{
+        width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa{
+    color: #d8e2dc;
+    margin-top: 1.5vh;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook{
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+
+.wrapper ul li:hover .fa-twitter{
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+
+.wrapper ul li:hover .fa-instagram{
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-linkedin{
+    color: #0e76a8;
+    text-shadow: 0 0 15px #0e76a8;
+    transition: all 0.5s ease;
+}
+
+    

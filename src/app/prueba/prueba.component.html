@@ -1,0 +1,51 @@
+
+<div 
+    class="card mat-card" >
+    <div 
+        class="card-titles">
+        <h2>
+            Acerca de
+        </h2>
+    </div>
+    <div>
+          <p 
+            id="text-acercade" 
+            [textContent]="text">
+            Error
+        </p>
+    </div>
+    <!--Boton para editar -->
+    <div 
+        class="btn-edit">
+        <button 
+            type="button" 
+            class="btn btn-primary" >
+            <i 
+                class="fa fa-pen" 
+                (click)="onEdit()">
+                Editar
+            </i>
+        </button>
+    </div>
+    <!--Parte de la edicion -->
+    <div 
+        class="form-control" 
+        *ngIf="showEdit" >
+        <form>
+            <input id="edit-acercade" 
+                    type="text" 
+                    name="edit-acercade" 
+                    [(ngModel)]="entrada">
+            <!--Boton para guardar lo editado -->
+            <button id="listo" 
+                    type="button"
+                    class="btn btn-primary" 
+                    (click)="onSave()">
+                    Listo
+            </button>
+        </form>
+    </div>
+
+
+    <button (click)="sendMessage()">Send Message</button>
+</div>

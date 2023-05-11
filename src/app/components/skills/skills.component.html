@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Circular Progress Bar | CodingNepal</title>
+    <link rel="stylesheet" href="skills.component.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  </head>
+  <body>
+    <div class="container ">
+        <div class="row contenedorTitulo">
+            <div class="col-3">
+                <h1 id="titulo">Skills</h1>
+            </div>
+        </div>
+        <div class="row contenedor">
+            <div class="col-12">
+                <h1><br></h1>
+            </div>
+        </div>
+
+
+        <div class="row contenedor">
+            <div class="col-3">
+                <div class="wrapper">
+                    <div class="card">
+                      <div class="circle">
+                          <div class="box"><span>
+                            {{html_por}}%
+                          </span></div>
+                      </div>
+                      <div class="text">HTML & CSS</div>
+                    </div> 
+                  </div>
+            </div>
+            
+            <div class="col-3">
+                <div class="wrapper">
+                    <div class="card js">
+                      <div class="circle">
+                          <div class="box"><span>
+                            {{javascript_por}}%
+                          </span></div>
+                      </div>
+                      <div class="text">JavaScript</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="wrapper">
+                    <div class="card react">
+                      <div class="circle">
+                        <div class="box"><span>
+                          {{react_por}}%
+                        </span></div>
+                      </div>
+                      <div class="text">React JS</div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-3">
+                <div class="wrapper">
+                    <div class="card angular">
+                      <div class="circle anim">
+                        <div class="box"><span>
+                          {{angular_por}}%
+                        </span></div>
+                      </div>
+                      <div class="text">Angular</div>
+                    </div>
+                  </div>
+            </div>
+           
+        </div>
+ 
+    </div>
+
+
+
+
+
+  </body>
+</html>

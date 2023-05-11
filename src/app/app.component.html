@@ -1,4 +1,16 @@
-<app-header ></app-header>
-<app-banner ></app-banner>
+
+<app-header (buttonEvent)="receiveMessage($event)" ></app-header>
+<app-banner [mensaje]="edit" ></app-banner>
+<app-experiencia></app-experiencia>
+<app-educacion></app-educacion>
+<app-skills></app-skills>
+
+
+<div class="bot-ed" *ngIf="state_edit" (click)="editar() " >
+    <img class="imagen-edit" src="https://cdn-icons-png.flaticon.com/512/84/84380.png">
+</div>
+
+
+
 <router-outlet></router-outlet>
 

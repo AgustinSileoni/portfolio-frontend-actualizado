@@ -1,31 +1,85 @@
 
+<body>
+    <section class="perfil-usuario portada">
+        <div class="contenedor-perfil">
+            <div class="portada-perfil m-3 " style="background-image: url('https://www.xtrafondos.com/wallpapers/seleccion-argentina-con-trofeo-copa-mundial-fifa-11268.jpg');">
+                <div class="sombra"></div>
+                <div class="avatar-perfil ">
+                    <img src="https://wallpapercave.com/wp/wc1712879.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br/>
+    <br/>
+    <br/>
 
-<section class="perfil-usuario">
-    <div class="contenedor-perfil">
-        <div class="portada-perfil m-3 " style="background-image: url('https://www.xtrafondos.com/wallpapers/seleccion-argentina-con-trofeo-copa-mundial-fifa-11268.jpg');">
-            <div class="sombra"></div>
-            <div class="avatar-perfil ">
-                <img src="https://wallpapercave.com/wp/wc1712879.jpg" alt="img">
+    <div class="container border-3 presentacion">
+        <div class="row">
+            <div class="col-5 name text-center">
+                <h1 
+                [textContent]="name">
+                Name
+                </h1>
+
+                <!--Parte de la edicion -->
+                <div 
+                class="form-control" 
+                *ngIf="showEdit" >
+                <form>
+                    <input id="edit-acercade" 
+                            type="text" 
+                            name="edit-acercade" 
+                            [(ngModel)]="entrada">
+                    <!--Boton para guardar lo editado -->
+                    <button id="listo" 
+                            type="button"
+                            class="btn btn-primary" 
+                            (click)="onSave()">
+                            Listo
+                    </button>
+                </form>
+            </div>
+
+            <h5 
+            [textContent]="fecha_nacimiento">
+            Birthday
+            </h5>
+                <!--Parte de la edicion -->
+                <div 
+                class="form-control" 
+                *ngIf="showEdit" >
+                <form>
+                    <input id="edit-acercade" 
+                            type="date" 
+                            name="edit-birthday" 
+                            [(ngModel)]="entrada_birthday">
+                </form>
+
+                
+            </div>
+            
+            </div >
+            <div 
+                class="col-1 name text-center"
+                *ngIf="showEditBtn">
+                <!--Boton para editar -->
+                <div 
+                class="btn-edit">
+                    <img 
+                        (click)="onEdit()" 
+                        class="btn-edit" 
+                        src="https://cdn-icons-png.flaticon.com/512/61/61456.png?w=740&t=st=1683757568~exp=1683758168~hmac=d4b1bbb5fbec67f3dd173727da00be485579f5d46c7c4df7364866e4b5fcdfd7">
+                </div>
+            </div>
+            <div class="col-7 text-center">
+                <h2>Full Stack Developer JR</h2>
+                <p> 
+                Estudiante de Ingeniería en Computación con interés en obtener 
+                las primeras experiencias en este mercado, lleno de ganas de seguir 
+                aprendiendo y crecer principalmente en el sector de software enfocado 
+                en el desarrollo web. </p>
             </div>
         </div>
     </div>
-</section>
-<br/>
-<br/>
-<br/>
-
-<div class="container">
-    <div class="row">
-        <div class="col-5 name text-center">
-            <h1>Agustin Sileoni</h1>
-            <h2>Full Stack Developer JR</h2>
-        </div>
-        <div class="col-7 description text-center">
-           <p> 
-            Estudiante de Ingeniería en Computación con interés en obtener 
-            las primeras experiencias en este mercado, lleno de ganas de seguir 
-            aprendiendo y crecer principalmente en el sector de software enfocado 
-            en el desarrollo web. </p>
-        </div>
-    </div>
-</div>
+</body>
